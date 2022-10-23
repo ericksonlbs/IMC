@@ -28,4 +28,6 @@ jobs:
     - name: Submit to Jaguar Portal
       run: ./.github/scripts/jaguarPortal.sh
       if: always()
+      env:
+          JAGUAR_PORTAL_APIKEY: ${{ secrets.JAGUAR_PORTAL_APIKEY }}
       shell: bash
