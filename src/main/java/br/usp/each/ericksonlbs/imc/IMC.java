@@ -30,6 +30,7 @@ public class IMC
         else if (imc > 40)
         {
             level = 4;
+        }
         else 
         {
             level = 5;
