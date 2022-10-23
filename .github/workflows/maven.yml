@@ -27,3 +27,5 @@ jobs:
       run: mvn -B package --file pom.xml
     - name: Submit to Jaguar Portal
       run: ./.github/scripts/jaguarPortal.sh
+      if: always()
+      shell: bash
