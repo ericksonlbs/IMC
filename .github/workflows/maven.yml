@@ -25,9 +25,15 @@ jobs:
         cache: maven
     - name: Build with Maven
       run: mvn -B package --file pom.xml
-    - name: Submit to Jaguar Portal
-      run: ./.github/scripts/jaguarPortal.sh
+    - name: Submit to Jaguar Portal      
+      uses: ericksonlbs/jaguarportal-submit@v0.0.1-snapshot
       if: always()
+      with:
+        # The key of the SonarQube project
+        jaguarPortalProjectKey: myjaguar
+        # The name of the SonarQube project
+        jaguarPortalProjectName:  My Jaguar
+        # The name of the SonarQube organization in SonarCloud. For hosted SonarQube, skip this setting.
+        jaguarPortalHostUrl: https://fifilesync.azurewebsites.net/api/HttpTriggerHttpClient
       env:
-          JAGUAR_PORTAL_APIKEY: ${{ secrets.JAGUAR_PORTAL_APIKEY }}
-      shell: bash
+        JAGUAR_PORTAL_APIKEY: ${{ secrets.JAGUARPORTAL_APIKEY }}
