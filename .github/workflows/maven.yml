@@ -36,4 +36,4 @@ jobs:
         # The name of the SonarQube organization in SonarCloud. For hosted SonarQube, skip this setting.
         jaguarPortalHostUrl: https://fifilesync.azurewebsites.net/api/HttpTriggerHttpClient
       env:
-        JAGUAR_PORTAL_APIKEY: ${{ secrets.JAGUARPORTAL_APIKEY }}
+        JAGUARPORTAL_APIKEY: ${{ secrets.JAGUARPORTAL_APIKEY }}
