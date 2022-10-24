@@ -29,11 +29,7 @@ jobs:
       uses: ericksonlbs/jaguarportal-submit@v0.0.1-snapshot
       if: always()
       with:
-        # The key of the SonarQube project
         jaguarPortalProjectKey: myjaguar
-        # The name of the SonarQube project
         jaguarPortalProjectName:  My Jaguar
-        # The name of the SonarQube organization in SonarCloud. For hosted SonarQube, skip this setting.
         jaguarPortalHostUrl: https://fifilesync.azurewebsites.net/api/HttpTriggerHttpClient
-      env:
-        JAGUARPORTAL_APIKEY: ${{ secrets.JAGUARPORTAL_APIKEY }}
+        jaguarPortalAPIKey: ${{ secrets.JAGUARPORTAL_APIKEY }}
