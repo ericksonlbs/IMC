@@ -32,4 +32,4 @@ jobs:
         jaguarPortalProjectKey: myjaguar
         jaguarPortalProjectName:  My Jaguar
         jaguarPortalHostUrl: https://fifilesync.azurewebsites.net/api/HttpTriggerHttpClient
-        jaguarPortalAPIKey: ${{ secrets.JAGUARPORTAL_APIKEY }}
+        jaguarPortalAPIKey: ${{ secrets.jaguarPortalAPIKey }}
