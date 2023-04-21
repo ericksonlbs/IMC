@@ -1,4 +1,4 @@
-package $package;
+package br.usp.each.ericksonlbs.imc;
 
 public class App 
 {

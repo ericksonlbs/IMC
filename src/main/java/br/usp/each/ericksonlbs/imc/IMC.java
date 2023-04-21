@@ -1,4 +1,4 @@
-package $package;
+package br.usp.each.ericksonlbs.imc;
 
 /**
  * A very simple code used as motivational example

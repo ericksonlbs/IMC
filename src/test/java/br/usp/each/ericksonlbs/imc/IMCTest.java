@@ -1,4 +1,4 @@
-package $package;
+package br.usp.each.ericksonlbs.imc;
 
 import org.junit.Assert;
 import org.junit.Test;
