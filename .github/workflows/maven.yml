@@ -37,7 +37,7 @@ jobs:
       run: mvn -B package --file pom.xml
     - name: Submit to Jaguar Portal      
       uses: ericksonlbs/jaguarportal-submit@v0.0.1-snapshot
-      if: always()
+      if: failure()
       with:
         jaguarPortalProjectKey: myjaguar
         jaguarPortalProjectName:  My Jaguar
