@@ -39,8 +39,8 @@ jobs:
       uses: ericksonlbs/jaguarportal-submit@v0.0.1-snapshot
       if: failure()
       with:
-        jaguarPortalProjectKey: myjaguar
-        jaguarPortalProjectName:  My Jaguar
+        jaguarPortalProjectKey: IMC
+        jaguarPortalProjectName:  IMC - Índice de Massa Corporal
         jaguarPortalHostUrl: https://fifilesync.azurewebsites.net/api
         jaguarPortalAPIKey: ${{ secrets.jaguarPortalAPIKey }}
         jaguarPortalAnalisysPath: /target
