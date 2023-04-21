@@ -44,3 +44,10 @@ jobs:
         jaguarPortalHostUrl: https://fifilesync.azurewebsites.net/api
         jaguarPortalAPIKey: ${{ secrets.jaguarPortalAPIKey }}
         jaguarPortalAnalisysPath: /target
+    - name: Upload Artifact
+      uses: actions/upload-artifact@v3
+      if: failure()
+      with:
+        name: jaguar
+        path: target/jaguar2.csv
+        retention-days: 5
