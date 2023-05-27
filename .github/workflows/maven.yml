@@ -49,5 +49,5 @@ jobs:
       if: failure()
       with:
         name: jaguar
-        path: target/jaguar2.csv
+        path: target/jaguar2.xml
         retention-days: 5
