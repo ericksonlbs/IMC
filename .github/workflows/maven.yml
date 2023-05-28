@@ -20,7 +20,7 @@ jobs:
     - name: Prepare Jaguar2
       uses: actions/checkout@v3
       with:
-        repository: saeg/jaguar2        
+        repository: ericksonlbs/jaguar2        
         path: jaguar2-repo # diretório onde o repositório será clonado
     - name: Compile dependency
       run: |
