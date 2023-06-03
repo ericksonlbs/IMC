@@ -42,8 +42,9 @@ jobs:
         jaguarPortalProjectKey: IMC
         jaguarPortalProjectName:  IMC - Índice de Massa Corporal
         jaguarPortalHostUrl: https://fifilesync.azurewebsites.net/api
-        jaguarPortalAPIKey: ${{ secrets.jaguarPortalAPIKey }}
-        jaguarPortalAnalisysPath: /target
+        jaguarPortalClientId: 2F2392AB70F21E2CFE80CC420B8CCDA3
+        jaguarPortalClientSecret: ${{ secrets.jaguarPortalClientSecret }}
+        jaguarPortalAnalysisPath: /target
     - name: Upload Artifact
       uses: actions/upload-artifact@v3
       if: failure()
