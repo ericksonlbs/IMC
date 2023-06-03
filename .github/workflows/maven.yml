@@ -39,9 +39,8 @@ jobs:
       uses: ericksonlbs/jaguarportal-submit@v0.0.1-snapshot
       if: failure()
       with:
-        jaguarPortalProjectKey: IMC
-        jaguarPortalProjectName:  IMC - Índice de Massa Corporal
-        jaguarPortalHostUrl: https://fifilesync.azurewebsites.net/api
+        jaguarPortalProjectKey: 341e51b5-e769-4c74-af52-0ebba12ff1d0
+        jaguarPortalHostUrl: https://jaguarportal.azurewebsites.net/
         jaguarPortalClientId: 2F2392AB70F21E2CFE80CC420B8CCDA3
         jaguarPortalClientSecret: ${{ secrets.jaguarPortalClientSecret }}
         jaguarPortalAnalysisPath: /target
