@@ -43,6 +43,7 @@ jobs:
         jaguarPortalHostUrl: https://jaguarportal.azurewebsites.net/
         jaguarPortalClientId: FD50DD4D7C867BFE6A21FB03792B59E0
         jaguarPortalClientSecret: ${{ secrets.jaguarPortalClientSecret }}
+        jaguarPortalGitHubAccessToken: ${{ secrets.jaguarPortalGitHubAccessToken }}
         jaguarPortalAnalysisPath: /target
     - name: Upload Artifact
       uses: actions/upload-artifact@v3
