@@ -28,19 +28,19 @@
     	<dependency>
 			<groupId>br.usp.each.saeg</groupId>
 			<artifactId>jaguar2-junit4</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
+			<version>0.0.1</version>
 			<scope>test</scope>
 		</dependency>
 		<dependency>
 			<groupId>br.usp.each.saeg</groupId>
 			<artifactId>jaguar2-jacoco-provider</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
+			<version>0.0.1</version>
 			<scope>test</scope>
 		</dependency>
 		<dependency>
 			<groupId>br.usp.each.saeg</groupId>
 			<artifactId>jaguar2-xml-exporter</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
+			<version>0.0.1</version>
 			<scope>test</scope>
 		</dependency>
   </dependencies>
