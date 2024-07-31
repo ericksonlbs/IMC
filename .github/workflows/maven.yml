@@ -28,8 +28,8 @@ jobs:
         cache: maven
     - name: Build with Maven
       run: mvn -B package --file pom.xml
-    - name: Submit to Jaguar Portal      
-      uses: ericksonlbs/jaguarportal-submit@v0.0.1-snapshot
+    - name: jaguarportal
+      uses: saeg/jaguarportal-submit@v1.0.0  
       if: failure()
       with:
         jaguarPortalProjectKey:	7ad9753a-cc95-4258-9aae-7c4744c9436c
