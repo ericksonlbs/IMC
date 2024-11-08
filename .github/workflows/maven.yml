@@ -29,7 +29,7 @@ jobs:
     - name: Build with Maven
       run: mvn -B package --file pom.xml
     - name: Submit to Jaguar Portal      
-      uses: ericksonlbs/jaguarportal-submit@v0.0.1-snapshot
+      uses: saeg/jaguarportal-submit@v1.0.0
       if: failure()
       with:
         jaguarPortalProjectKey:	7ad9753a-cc95-4258-9aae-7c4744c9436c
@@ -43,5 +43,5 @@ jobs:
       if: failure()
       with:
         name: jaguar
-        path: target/jaguar2.xml
+        path: target/jaguar2.csv
         retention-days: 5
